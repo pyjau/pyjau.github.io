@@ -1,1 +1,311 @@
-<h1>OI</h1>
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+<head>
+    <!-- register service worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(function() {
+                        console.log("Service Worker Registered");
+                    });
+            });
+        }
+    </script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=implicit" ></script>
+<script>	
+grecaptcha.ready(function() {	
+    grecaptcha.execute('6LfeFtoUAAAAAHlttgtAqVJ5e9cySfIlhtVg54Jh', {action: 'homepage'}).then(function(token) {	
+     console.log(token);	
+    });	
+});	
+</script>
+    <!-- end of service worker -->
+    <title>Eng. Samuel Pereira de Godoy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icons/512.png">
+    <!-- start of web manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- end of web manifest -->
+	<meta name="robots" content="index, follow">
+	 <meta name="description" content="Página de perfil pessoal, com um resumo sobre o Samuel, Engenheiro da Computação">
+    <!-- theme-color -->
+	<link rel="apple-touch-icon" href="icons/512.png">
+    <meta name="theme-color" content="#fff" />
+    <!-- end-theme-color -->
+    <script src="assets/js/jquery.min.js" async></script>
+    <script src="assets/js/skel.min.js" async></script>
+    <script src="assets/js/util.js" defer></script>
+    <script src="assets/js/respond.min.js" defer></script>
+    <script src="assets/js/responsive.js" defer></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="">
+    <div id="wrapper">
+
+        <article id="home" class="panel special" style="display: flex;">
+
+            <div class="image" style="background-image: url(&quot;images/samuel.jpg&quot;); background-position: center center;">
+
+                <img src="images/samuel.jpg" alt="Samuel Pereira de Godoy" data-position="center center" style="display: none;">
+
+            </div>
+
+            <div class="content">
+
+                <div class="inner">
+
+                    <header>
+                        <h1>Samuel Godoy</h1>
+
+                        <p>Engenheiro da Computação</p>
+
+                    </header>
+
+                    <nav id="nav">
+
+                        <ul class="actions vertical special spinY">
+
+                            <li>
+
+                                <a href="#cv" class="button">Experiências Profissionais</a></li>
+
+                            <li><a href="#reconhecimentos" class="button">Reconhecimentos</a></li>
+
+                            <li><a href="#projetos" class="button">Projetos Integradores</a></li>
+                           
+                            <li><a href="#ferramentas" class="button">Ferramentas pessoais</a></li>
+
+                        </ul>
+                    </nav>
+
+                    <ul class="icons">
+                        <li><a href="https://www.linkedin.com/in/samuelgodoy/" class="icon fa-linkedin" alt="Acesse meu LinkedIn"><span class="label">LinkedIn</span></a></li>
+
+                        <li><a href="https://github.com/seosec" class="icon fa-github" alt="Conheça meu GitHub"><span class="label">GitHub</span></a></li>
+						
+						 <li><a href="https://api.whatsapp.com/send?phone=+5541988048765&text=Oi" class="icon fa-whatsapp" alt="Mande uma mensagem"><span class="label">WhatsApp</span></a></li>
+					
+
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article id="cv" class="panel secondary inactive" style="display: none;">
+
+            <div class="image" style="background-image: url(&quot;images/pic04.jpg&quot;);background-position: center center;">
+                <img src="images/pic04.jpg" alt="Imagem de escritório" data-position="center center" style="display: none;">
+            </div>
+            <div class="content">
+                <ul class="actions spinX">
+                    <li>
+
+                        <a href="#home" class="button small back">Voltar</a></li>
+
+                </ul>
+
+                <div class="inner">
+                    <header>
+                        <h2> Experiência Profissional</h2>
+                    </header>
+                    <header>
+                        <p>Atualmente</p>
+                    </header>
+                    <p>No momento estou em busca de oportunidades, sou entusiasta em cibersegurança, tenho conhecimento em desenvolvimento web e embarcados</p>
+
+                    <header>
+
+                        <p>Anteriormente</p>
+
+                    </header>
+
+                    <p>
+                        Estagiário de Cibersegurança no EBANX
+						<br>
+						<br>
+						Responsabilidades:<br>
+						Análise de códigos em diversas linguagens de programação manualmente e automatizado;<br>
+						Análise de vulnerabilidades em redes;<br>
+						Auditoria de serviços internos e externos;<br>
+						Documentação de processos para a ISO 27001;<br>
+						Monitoramento de ameaças (antivírus, redes sociais e alertas);<br>
+						Validar tecnologias importantes para segurança da informação<br>
+                        <ul class="actions spinX">
+                            <li>
+                                <a href="https://www.linkedin.com/in/samuelgodoy/" class="button small forward">Ver LinkedIn</a>
+                            </li>
+                        </ul>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+		
+		<article id="ferramentas" class="panel secondary inactive" style="display: none;">
+
+            <div class="image" style="background-image: url(&quot;images/pic04.jpg&quot;);background-position: center center;">
+                <img src="images/pic04.jpg" alt="Imagem de escritório" data-position="center center" style="display: none;">
+            </div>
+            <div class="content">
+                <ul class="actions spinX">
+                    <li>
+
+                        <a href="#home" class="button small back">Voltar</a></li>
+
+                </ul>
+
+                <div class="inner">
+                    <header>
+                        <h2>FERRAMENTAS</h2>
+                    </header>
+                    <header>
+
+                        <p>CRIPTOGRAFIA</p>
+
+                    </header>
+
+                    <p>
+                       Plugin chrome
+						<br>
+						<br>
+						O plugin está disponível na <a href="https://chrome.google.com/webstore/detail/mensagemprivada/lalcoeakalbbhgjpeeloghbpdidpdldj" >Web Store</a> é compatível com o App do android e é útil para criptografar mensagens.
+						<br>
+
+
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article id="reconhecimentos" class="panel secondary inactive" style="display: none;">
+
+            <div class="image" style="background-image: url(&quot;images/samuel.jpg&quot;); background-position: center bottom;">
+
+                <img src="images/samuel.jpg" alt="Samuel Pereira de Godoy" data-position="bottom center" style="display: none;">
+
+            </div>
+            <div class="content">
+
+                <ul class="actions spinX">
+
+                    <li>
+
+                        <a href="#home" class="button small back">Voltar</a>
+
+                    </li>
+
+                </ul>
+
+                <div class="inner">
+
+                    <header>
+
+                        <h2>Reconhecimentos</h2>
+						<h3>Google</h3>
+                    </header>
+					<p>Identificação de vulnerabilidade</p>
+                    <p>
+                        A página principal do Google estava vulnerável a um ataque que facilitava forçar o downgrade do HTTPS, após validarem enviaram uma carta assinada com reconhecimento agradecendo por ajudar a proteger os usuários.
+                    </p>
+					
+					<h3>CELEPAR</h3>
+                    <p>Identificação de vulnerabilidade</p>
+
+                    </header>
+                    <p>
+                        Uma aplicação utilizada pelo governo do estado do Paraná estava vulnerável, após validarem enviaram uma carta assinada com reconhecimento de contribuição.
+                    </p>
+
+					<h3>Polícia Científica</h3>
+                    <p>Reconhecimento profissional</p>
+
+                    </header>
+                    <p>
+                       Durante o período que trabalhei para a CELEPAR fiquei alocado no Instituto de criminalística, auxiliei em diversos processos internos e fui reconhecido profissionalmente com uma carta.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article id="projetos" class="panel secondary inactive" style="display: none;">
+
+            <div class="image" style="background-image: url(&quot;images/samuel.jpg&quot;); background-position: center bottom;">
+
+                <img src="images/samuel.jpg" alt="Samuel Pereira de Godoy" data-position="bottom center" style="display: none;">
+
+            </div>
+            <div class="content">
+
+                <ul class="actions spinX">
+
+                    <li>
+
+                        <a href="#home" class="button small back">Voltar</a>
+
+                    </li>
+
+                </ul>
+
+                <div class="inner">
+
+                    <header>
+
+                        <h2>PROJETOS INTEGRADORES</h2>
+						<h3>ENGENHARIA DA COMPUTAÇÃO</h3>
+                    </header>
+					<p>Sistema de reconhecimento facial</p>
+                    <p>
+						O trabalho de conclusão de curso foi o desenvolvimento de um sistema de reconhecimento facial em Python, a proposta foi de utilizar como uma ferramenta para vigilantes visto que algumas regulamentações exigem reforço na segurança física com guardas.
+                    </p>
+					
+					<h3>TÉCNICO EM INFORMÁTICA</h3>
+                    <p>Site e extranet </p>
+
+                    </header>
+                    <p>
+                        Para finalizar o curso técnico, desenvolvi um site para uma empresa fictícia do meu pai, a proposta do site era ser um catálogo de serviços prestados relacionados a construção cívil, a extranet foi feita para armazenar informações sobre o almoxarifado e ambos foram desenvolvidos em HTML, CSS, Javascript e PHP.
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <footer id="footer" class="">
+
+            <span>© Samuel Godoy 2020</span>
+
+        </footer>
+
+    </div>
+  
+
+    <script src="assets/js/buttons-navigate.js"></script>
+ 
+</body>
+</html>
