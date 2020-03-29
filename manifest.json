@@ -3,8 +3,8 @@
   "display": "standalone",
   "orientation":"portrait",
   "theme_color": "#fff",           
-  "short_name": "Samuel",
-  "name": "Nutricionista",
+  "short_name": "Nutricionaista",
+  "name": "Nutricionista Vanessa Pyjau",
   "icons": [
   {
   "src": "icons/512.png",
